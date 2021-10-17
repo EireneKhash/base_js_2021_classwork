@@ -55,9 +55,9 @@ if (a === "1") {
   console.log("Верно_8");
 } else {
   console.log("Неверно_8");
-}
+} */
 
-console.log("Работа с логическими переменными");
+/* console.log("Работа с логическими переменными");
 const test = false;
 
 //1
@@ -76,32 +76,30 @@ if (test != true) {
   console.log("Верно_2");
 } else {
   console.log("Неверно_2");
-}
+} */
 
-console.log("Работа с && (и) и || (или)");
+/* console.log("Работа с && (и) и || (или)");
 
-const a2 = 2;
+const a = 2;
+const b = 5;
 
 //1
-let result3 =
-  a2 > 0 && a2 < 5 ? console.log("Верно_1") : console.log("Неверно_1");
+result1 = a > 0 && a < 5 ? console.log("Верно_1") : console.log("Неверно_1");
 
 //2
-let result4 = a2 == 0 || a2 == 2 ? console.log(a2 + 7) : console.log(a2 / 10);
+result2 = a == 0 || a == 2 ? console.log(a + 7) : console.log(a / 10);
 
-const a3 = 3;
-const b = 5;
 //3
 
-let result5 = a3 <= 1 && b >= 3 ? console.log(a3 + b) : console.log(a3 - b);
+let result3 = a <= 1 && b >= 3 ? console.log(a + b) : console.log(a - b);
 
 //4
-let result6 =
-  (a3 > 2 && a3 < 11) || (b >= 6 && b < 14)
+let result4 =
+  (a > 2 && a < 11) || (b >= 6 && b < 14)
     ? console.log("Верно_4")
     : console.log("Неверно_4");
-
-console.log("На switch-case");
+ */
+/* console.log("На switch-case");
 
 //1
 
@@ -186,9 +184,9 @@ if (sum1 === sum2) {
   console.log("Да");
 } else {
   console.log("Нет");
-}
+} */
 
-console.log("Циклы while и for");
+/* console.log("Циклы while и for");
 
 //1
 let i = 1;
@@ -198,69 +196,172 @@ while (i <= 100) {
 }
 for (i = 0; i < 10; i++) {
   console.log(i + 1);
-}
-//2
-i = 11;
+} */
+
+/* //2
+let i = 11;
 while (i <= 33) {
   console.log(i);
   i += 1;
 }
 for (i = 10; i < 33; i++) {
   console.log(i + 1);
-}
+} */
 
-//3
-i = 0;
+/* //3
+let i = 0;
 while (i <= 100) {
   console.log(i);
   i += 2;
 }
 for (i = -2; i < 100; i = i + 2) {
   console.log(i + 2);
-}
+} */
 
-//4
-i = 1;
-let sum3 = 0;
+/* //4
+let i = 1;
+let sum = 0;
 while (i <= 100) {
-  sum3 = i + sum3;
+  sum = i + sum;
   i += 1;
 }
-console.log(sum3);
+console.log(sum); */
 
-let sum4=0;
+/* let sum = 0;
 for (i = 0; i < 101; i = i + 1) {
-  sum4 = i + sum4;
+  sum = i + sum;
 }
-console.log("Сумма чисел", sum4);
+console.log("Сумма чисел", sum); */
 
-console.log("Работа с for для массивов");
+/* console.log("Работа с for для массивов");
 //1
-let arr1 = [1, 2, 3, 4, 5];
-for (i = 0, l = arr1.length; i < l; i++) {
+const arr1 = [1, 2, 3, 4, 5];
+for (i = 0; i < arr1.length; i++) {
   console.log(arr1[i]);
 }
+
 //2
-let arr2 = [1, 2, 3, 4, 5];
-for (i = 0, l = arr2.length; i < l; i++) {
-  console.log(arr2[i]);
+let result = 0;
+const arr2 = [1, 2, 3, 4, 5];
+for (i = 0; i < arr2.length; i++) {
+  result = arr2[i] + result;
+}
+console.log(result); */
+
+/* console.log("Задачи общие");
+//1
+const arr3 = [2, 5, 9, 15, 0, 4];
+for (i = 0; i < arr3.length; i++) {
+  if (arr3[i] >= 3 && arr3[i] <= 10) {
+    console.log(arr3[i]);
+  }
+}
+
+//2
+const arr4 = [1, 2, 3, -4, -5, 6, -3, -1];
+let sum = 0;
+for (i = 0; i < arr4.length; i += 1) {
+  if (arr4[i] > 0) {
+    sum += arr4[i];
+  }
+}
+console.log("Сумма элементов массива", sum); */
+
+//3
+/* const arr5 = [1, 2, 5, 9, 4, 13, 4, 10];
+for (i = 0; i < arr5.length; i += 1) {
+  if (arr5[i] === 4) {
+    console.log("Есть!");
+    break;
+  }
+} */
+
+//4
+/* const arr6 = [10, 20, 30, 40, 50, 235, 3000];
+let x;
+for (i = 0; i < arr6.length; i += 1) {
+  x = String(arr6[i]);
+  if (x[0] == "2" || x[0] == "1" || x[0] == "5") {
+    console.log(arr6[i]);
+  }
+} */
+
+//5
+/* const arr7 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let x = "-";
+for (i = 0; i < arr7.length; i += 1) {
+  x = x + arr7[i] + "-";
+}
+console.log(x); */
+
+//6
+/* const arr8 = [
+  "Понедельник",
+  "Вторник",
+  "Среда",
+  "Четверг",
+  "Пятница",
+  "Суббота",
+  "Воскресенье",
+];
+for (i = 0; i < arr8.length; i += 1) {
+  if (arr8[i] == "Суббота" || arr8[i] == "Воскресенье") {
+    console.log(arr8[i].bold());
+  } else {
+    console.log(arr8[i]);
+  }
 }
  */
 
-console.log("Задачи общие");
-//2
-const arr3 = [1, 2, 3 - 4, -5, 6, -3, -1];
-let sum5 = 0;
-console.log(arr2[i]);
-for (i = 0; i < arr3.length; i += 1) {
-  if (arr3[i] > 0) {
-    sum5 += arr3[1];
+//7
+/* const arr9 = [
+  "Понедельник",
+  "Вторник",
+  "Среда",
+  "Четверг",
+  "Пятница",
+  "Суббота",
+  "Воскресенье",
+];
+let day = "Пятница";
+for (i = 0; i < arr9.length; i += 1) {
+  if (arr9[i] === day) {
+    console.log(arr9[i].italics());
+  } else {
+    console.log(arr9[i]);
   }
 }
-//4
-console.log(sum5);
-const arr4=[10,20,30,40,50,235,3000];
-for(+arr4[i].toString()[0]===1||
-+arr4[i].toString()[0]===2||
-+arr4[i].toString()[0]===5);)
-{console.log(arr4[i]);}
+ */
+
+//8
+/* let n = 1000;
+let num = 0;
+for (; n >= 50; num += 1) {
+  n = n / 2;
+}
+console.log(num); */
+
+let year;
+const yearOfGagarinAtCosmos = 1961;
+let leapYear = 0;
+let i = 0;
+for (year = 1800; year <= 2020; year += 1) {
+  if (year % 4 === 0) {
+    leapYear += 1;
+  }
+  if (year <= yearOfGagarinAtCosmos) {
+    i += 1;
+  }
+}
+console.log(
+  "Потребовалось ",
+  leapYear,
+  " итераций для вычисления всех високосных годов промежутка, всего ",
+  leapYear,
+  " високосных годов."
+);
+console.log(
+  "Потребовалось ",
+  i,
+  " итераций для поиска года первого полета человека в космос."
+);
