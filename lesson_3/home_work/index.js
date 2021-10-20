@@ -59,4 +59,4 @@ console.log("2" > 10);
 //false, т.к при сравнении строка "2" преобразуется в число, а 2 < 10
 
 console.log(NaN == undefined);
-////false, т.к по правилу языка JS undefined может быть равен только null или undefined при нестрогом равенстве
+//false, т.к по правилу языка JS undefined может быть равен только null или undefined при нестрогом равенстве
