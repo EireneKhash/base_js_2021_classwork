@@ -25,12 +25,11 @@ currentSums(numbers); */
 sumSeven = (numbers) => {
   let newArr = [];
   let res;
-  for (let i = 0; i < numbers.length; i += 1) {
+  for (let i = 0; i < numbers.length / 2; i += 1) {
     for (let j = 0; j < numbers.length; j += 1) {
       if (numbers[i] + numbers[j] === 7) {
         res = "(" + numbers[i].toString() + ":" + numbers[j].toString() + ")";
         newArr.push(res);
-        numbers.pop();
       }
     }
   }
@@ -54,12 +53,16 @@ console.log(firstLetterArr(str)); */
 const strToArrCustom = (str) => {
   let strNew = "";
   for (let i = 0; i < str.length; i += 1) {
-    strNew += str[i - 1] + str[i] + str[i + 1] + " ";
+    if (i === 0) {
+      strNew += str[i] + str[i + 1] + " ";
+    } else if (i === str.length - 1) {
+      strNew += str[i - 1] + str[i] + " ";
+    } else {
+      strNew += str[i - 1] + str[i] + str[i + 1] + " ";
+    }
   }
   console.log(strNew);
   let arr = strNew.trim().split(" ");
-  arr[0] = arr[0].slice(9); //удаление 'undefined' у 0 элемента
-  arr[arr.length - 1] = arr[arr.length - 1].slice(0, 2); //удаление 'undefined' у последнего элемента
   return arr;
 };
 console.log(strToArrCustom(str)); */
@@ -81,7 +84,7 @@ const getArr = (a, b, c) => {
   let arr = [];
   arr = arr.concat(a, b, c).sort((x, y) => y - x);
   console.log(arr); //не получилось добавить пробел вместо запятой
-//let arrNew = [];
+  //let arrNew = [];
   //arrNew.push(arr.join(",").split(",").join(" ")); //arr-строка, один элемент массива arrNew
   //console.log(arrNew);
 };
@@ -163,11 +166,11 @@ currentSums(numbers); */
 //12 Сделайте функцию arrayFill, которая будет заполнять массив заданными значениями. Первым параметром функция принимает значение, которым заполнять массив,
 //а вторым - сколько элементов должно быть в массиве. Пример: arrayFill('x', 5) сделает массив ['x', 'x', 'x', 'x', 'x'].
 
-const arrayFill = (element, arrLength) => {
+/* const arrayFill = (element, arrLength) => {
   let arr = [];
   for (let i = 0; i < arrLength; i += 1) {
     arr.push(element);
   }
   console.log(arr);
 };
-arrayFill("x", 5);
+arrayFill("x", 5); */
